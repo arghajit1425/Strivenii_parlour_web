@@ -1,0 +1,6 @@
+{
+  "name": "Strivenii",
+  "description": "Mumbai's most exclusive sanctuary for personalized hair artistry, bridal cosmetics, luxury skincare, and beauty rituals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

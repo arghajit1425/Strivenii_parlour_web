@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+
+  --color-brand-rose: #8a4853;
+  --color-brand-pink: #ffd9dd;
+  --color-brand-gold: #b76e79;
+  --color-brand-charcoal: #1b1c1c;
+  --color-brand-ivory: #fbf9f8;
+  --color-brand-shimmer: rgba(255, 253, 208, 0.4);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-brand-ivory);
+    color: var(--color-brand-charcoal);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-panel-dark {
+  background: rgba(27, 28, 28, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Fade Rose Gold Divider Line */
+.rose-gold-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, #b76e79 50%, transparent 100%);
+}
+
